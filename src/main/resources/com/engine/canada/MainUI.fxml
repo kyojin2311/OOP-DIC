@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.engine.canada.MainUI">
+    <tabs>
+        <Tab id="Tab0" text="Dictionaries">
+            <content>
+                <fx:include source="Tab_Dictionaries.fxml" />
+            </content>
+        </Tab>
+        <Tab id="Tab0" text="Add">
+            <content>
+                <fx:include source="Tab_Add.fxml" />
+            </content>
+        </Tab>
+        <Tab id="Tab0" text="Edit">
+            <content>
+                <fx:include source="Tab_Edit.fxml" />
+            </content>
+        </Tab>
+        <Tab id="Tab0" text="Translate">
+            <content>
+                <fx:include source="Tab_Translate.fxml" />
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

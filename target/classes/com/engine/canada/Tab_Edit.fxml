@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane id="Tab1" fx:id="editPane" dividerPositions="0.1457286432160804" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.engine.canada.MainUI">
+    <items>
+        <HBox prefHeight="149.0" prefWidth="598.0">
+            <children>
+                <TextField fx:id="WordSearch" prefHeight="40.0" prefWidth="200.0">
+                    <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button id="Button2" mnemonicParsing="false" onAction="#Search" prefHeight="40.0" prefWidth="70.0"  text="Search">
+                    <HBox.margin>
+                        <Insets top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="editWord" prefHeight="40.0" prefWidth="200.0">
+                    <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button id="Button2" mnemonicParsing="false" onAction="#edit" prefHeight="40.0" prefWidth="70.0"  text="Edit">
+                    <HBox.margin>
+                        <Insets top="15.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox prefHeight="264.0" prefWidth="598.0">
+            <children>
+                <StackPane prefHeight="337.0" prefWidth="270.0">
+                    <children>
+                        <WebView fx:id="WordExplain" maxHeight="280.0" prefHeight="299.0" prefWidth="270.0">
+                            <StackPane.margin>
+                                <Insets bottom="50.0" top="30.0" />
+                            </StackPane.margin></WebView>
+                        <ListView fx:id="listView" onMouseClicked="#listViewPushed" prefHeight="337.0" prefWidth="257.0">
+                            <StackPane.margin>
+                                <Insets />
+                            </StackPane.margin>
+                        </ListView>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </StackPane>
+                <TextField fx:id="editWordExplain" prefHeight="280.0" prefWidth="270.0">
+                    <HBox.margin>
+                        <Insets bottom="50.0" left="20.0" top="30.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+    </items>
+</SplitPane>

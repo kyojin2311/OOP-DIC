@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="Tab" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.engine.canada.MainUI">
+    <top>
+        <HBox fillHeight="false" prefHeight="54.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="WordSearch" maxHeight="40.0" maxWidth="500.0" prefHeight="40.0" prefWidth="364.0">
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button id="Button2" alignment="CENTER" centerShape="false" contentDisplay="CENTER" maxWidth="100.0" mnemonicParsing="false" onAction="#Search" prefHeight="40.0" prefWidth="70.0" text="Search">
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button id="Button2" fx:id="Delete" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="70.0" text="Delete" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <padding>
+                <Insets top="20.0" />
+            </padding>
+        </HBox>
+    </top>
+    <center>
+        <StackPane prefHeight="348.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <WebView fx:id="WordExplain" prefHeight="332.0" prefWidth="566.0" >
+                    <StackPane.margin>
+                        <Insets bottom="50.0" left="30.0" right="30.0" top="30.0" />
+                    </StackPane.margin></WebView>
+                <ListView fx:id="listView" onMouseClicked="#listViewPushed" prefHeight="332.0" prefWidth="563.0" >
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <StackPane.margin>
+                        <Insets bottom="30.0" left="30.0" right="30.0" />
+                    </StackPane.margin>
+                </ListView>
+                <!--<Button id="Button2" mnemonicParsing="false" onAction="#pronounce" prefHeight="40.0" prefWidth="100.0" stylesheets="@Dictionaries.css" text="pronounce" textAlignment="CENTER">
+                    <StackPane.margin>
+                        <Insets bottom="270.0" left="400.0" top="30.0" />
+                    </StackPane.margin>
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>-->
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

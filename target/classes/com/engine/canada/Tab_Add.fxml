@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane id="Tab2" dividerPositions="0.1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.engine.canada.MainUI">
+    <items>
+        <HBox focusTraversable="true" prefHeight="74.0" prefWidth="598.0">
+            <children>
+                <TextField fx:id="addWord" prefHeight="40.0" prefWidth="350.0">
+                    <HBox.margin>
+                        <Insets left="120.0" top="20.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button id="Button2" mnemonicParsing="false" onAction="#add" prefHeight="40.0" prefWidth="70.0" text="Add">
+                    <HBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox focusTraversable="true" maxHeight="319.0" maxWidth="602.0" prefHeight="319.0" prefWidth="598.0">
+            <children>
+                <TextField fx:id="addWordExplain" prefHeight="250.0" prefWidth="350.0">
+                    <HBox.margin>
+                        <Insets left="120.0" top="15.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+    </items>
+</SplitPane>
